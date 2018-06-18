@@ -8,6 +8,7 @@ public
 test&tries
 .firebaserc
 firebase*.log
+firebase.json
 package-lock.json
 
 # Editor directories and files
