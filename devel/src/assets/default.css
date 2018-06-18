@@ -1,0 +1,598 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+html {
+	background-color: #050564;
+}
+
+body {
+	color: white;
+	font-family: "Ubuntu";
+	font-size: 17px;
+	background-color: #050564;
+}
+
+hr.separator  {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+a, a:hover  {
+	color: #f40145;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+.primary {
+	background-color: #050564 !important;
+}
+
+.secondary {
+	background-color: #f40145 !important;
+}
+
+.tertiary {
+	background-color: #7c0355 !important;
+}
+
+.neutralPrimary {
+	background-color: #fff !important;
+}
+
+
+.neutralSecondary {
+	background-color: #ebebeb !important;
+}
+
+.primaryText {
+	color: #050564 !important;
+}
+
+.secondaryText {
+	color: #f40145 !important;
+}
+
+.qrCode {
+	width: 150px;
+}
+
+.triple-bottom-and-top-padding {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.simple-bottom-padding {
+  padding-bottom: 25px;
+}
+
+.double-bottom-padding {
+  padding-bottom: 50px;
+}
+
+hr.normal {
+	height: 25px;
+}
+
+hr.thicker {
+	height: 35px;
+}
+
+.stripe {
+	width: 100%;
+}
+
+.rotated {
+	background-image: url(top-triangle.svg), url(bottom-triangle.svg);
+	/*
+	XXX: The 110% width and the -3px offset are both trying to prevent the 'thin line under and over' bug, we are assuming caused by rounding of SVG width-height ratio.
+	 */
+	background-position: right top -3px, left bottom -3px;
+	background-size: 110%, 110%;
+	background-repeat: no-repeat;
+	padding-top: 6vw;
+	padding-bottom: 6vw;
+}
+
+.flex-centered-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pull-up-normal {
+	margin-top: -45px !important;
+}
+
+.sectionTitle {
+	position: relative;
+	left: 100%;
+	margin-left: -90px;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+}
+
+#mainTitleWrapper {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+}
+
+#mainTitleWrapper div {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 960px;
+  min-width: 320px;
+}
+
+#mainTitleWrapper div h1 {
+  display: inline;
+  margin-left: 0.5em;
+  padding-left: .4em;
+  padding-right: .4em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  background-color: #09099f;
+  font-size: 4.5vw;
+  color: #fff;
+}
+
+h2, h3 {
+	display: inline;
+}
+
+h2 {
+	padding-left: .4em;
+	padding-right: .4em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	background-color: #09099f;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 0.5rem;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+#header {
+	margin: 0 auto;
+	padding-top: 25px;
+	width: 100%;
+	max-width: 1160px;
+	min-width: 320px;
+	padding-bottom: 25px;
+}
+
+#menuLine {
+	padding-bottom: 25px;
+	/*INFO: we are using display: flex here and column and columns classes from Bulma in the HTML. Be very carefull with this mixed solution!*/
+	display: flex;
+	justify-content: space-between;
+}
+
+#siteLogo {
+	width: 40px;
+}
+
+#languageSelectorContainer {
+  font-size: 1.2em;
+}
+
+#languageSelectorContainer a {
+  color: #fff;
+}
+
+#languageSelectorContainer span.inactive {
+  color: #f40145;
+}
+
+#gameContainer {
+	margin: 0 auto;
+	width: 100vw;
+	height: 56.25vw;
+	max-width: 960px;
+	max-height: 540px;
+	min-width: 320px;
+	min-height: 180px;
+	background-color: #12126c;
+}
+
+#gameContainer * {
+	z-index: 100 !important;
+}
+
+#worksDevice {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#worksContent h4 a::before {
+  content: "#";
+}
+
+#worksContentWrapper {
+}
+
+#worksContent {
+	margin: 2em;
+}
+
+#worksContent h4 {
+	margin-top: 1em;
+	display: block;
+}
+
+#worksContent .linkContainer a.button {
+  padding: .5em 1.5em .5em 1.5em;
+  line-height: 2em !important;
+  border-radius: 5px;
+  border: none;
+  font-size: 21px;
+  color: #fff;
+}
+
+.storeLogo {
+	height: 40px;
+	margin-bottom: 1em;
+}
+
+#worksContent p {
+	margin-top: 1em;
+	padding-top: 0;
+	padding-bottom: 1em;
+	line-height: 1.7em;
+}
+
+#worksContent .difficultyContainer {
+	margin-bottom: 1em;
+}
+
+#worksDots {
+	/*background-color: rgba(99,255,99,0.3);*/
+}
+
+#dotContainer {
+	flex: 0 0 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+#dotContainer .dot {
+	margin-left: 7px;
+	margin-right: 7px;
+	flex: 0 0 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+#works .projectImage {
+	width: 172px;
+	height: 308px;
+	display: none;
+}
+
+#works .projectLogo {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 128px;
+	height: 128px;
+	border-radius: 15%;
+	display: block;
+}
+
+#tech .column  {
+	margin-bottom: 0;
+}
+
+.techHeader {
+	margin-top: 1em;
+}
+
+.techLogo {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.techLogo img {
+	width: 140px;
+}
+
+.techText {
+	padding-top: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 1em;
+}
+
+#whoWeAre {
+	background-color: #fff;
+}
+
+#works {
+	padding-bottom: 25px;
+}
+
+.default-box {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	min-width: 320px;
+}
+
+.member {
+	align-content: flex-start;
+}
+
+.member .jobTitle {
+	position: relative;
+	top: 15px;
+	left: 10px;
+	height: 30px;
+	width: 175px;
+	background-color: #f40145;
+	text-align: center;
+}
+
+.member .profilePhoto div {
+	margin: 0 auto;
+	width: 175px;
+}
+
+.member .profilePhoto div img {
+	width: 175px;
+	height: 175px;
+}
+
+#whoWeAre .shadowContainer {
+	background-color: #050564;
+}
+
+#whoWeAre .shadowContainer p {
+	padding-top: 25px;
+	line-height: 1.7rem;
+}
+
+#outerOverhangedContainer, #innerOverhangedContainer {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+#outerOverhangedContainer {
+	padding: 25px;
+}
+
+#innerOverhangedContainer {
+	width: 100%;
+}
+
+#mission {
+	overflow: hidden;
+}
+
+footer {
+	font-size: 21px;
+}
+
+footer a, footer a:hover {
+	color: #fff;
+}
+
+#moreInfoSwitchContainer {
+	height: 70px;
+	background-size: 70px;
+	background-image: url(bubble.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#moreInfoContainer {
+	font-size: 15px;
+}
+
+.less {
+	transform: scaleY(-1);
+}
+
+.more {
+	transform: scaleY(1);
+}
+
+/* turning back all child */
+.less * {
+	transform: scaleY(-1);
+}
+
+#contact .column {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#contact table {
+	margin: 0 auto;
+	width: 90%;
+}
+
+#contact td.attr {
+	width: 70px;
+}
+
+#contact td.sign {
+	font-weight: bold;
+}
+
+#contact span.line {
+	display: inline-block;
+}
+
+#copyrightContainer {
+	font-size: 13px;
+}
+
+table.accounts {
+	margin-top: 1em !important;
+	border-top: dotted 1px white;
+	table-layout: fixed;
+}
+
+table.accounts td {
+	word-wrap: break-word;
+}
+
+table.accounts .sign {
+	padding-top: 1em;
+}
+
+#contact h3 {
+	margin-bottom: 0.5em !important;
+}
+
+#contact table hr {
+	border-bottom: solid 1px #df1a51;
+}
+
+.formatButton, .formatButton:hover {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #fff;
+	color: #f40145;
+}
+
+@media screen and (max-width: 768px) {
+	.reverse-column-order {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.pull-up-normal {
+		margin-top: 0px !important;
+	}
+
+}
+
+@media screen and (max-width: 1023px) {
+	#worksContainer {
+		display: flex;
+		flex-flow: column;
+	}
+
+	#worksDevice {
+		order: 1 !important;
+	}
+
+	#worksContentWrapper {
+		order: 3 !important;
+	}
+
+	#worksDots {
+		order: 2 !important;
+	}
+}
+
+@media screen and (min-width: 769px) {
+
+  #mainTitleWrapper {
+    top: 130px;
+  }
+
+  #mainTitleWrapper div h1 {
+    font-size: 2em;
+  }
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.pull-down {
+		margin-top: 30px !important;
+	}
+
+	#whoWeAre .offsetContainer {
+		margin-left: 20px;
+	}
+
+	#logoContainer {
+		text-align: center;
+	}
+
+	#whoWeAre .shadowContainer {
+		overflow: visible;
+		height: 300px;
+		box-shadow: 0 0 55px rgba(0,0,0,0.15);
+	}
+
+	#outerOverhangedContainer {
+		padding-right: 44px;
+		width: calc(100% + 44px);
+		background-image: url(book-stapling.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+
+	#tech .column  {
+		margin-bottom: 1em;
+	}
+}
+@media screen and (min-width: 1024px) {
+
+	#dotContainer {
+		flex: 0 0 16px;
+		margin-top: 48px;
+		min-height: 128px;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#dotContainer .dot {
+		margin-left: 0px !important;
+		margin-right: 0px;
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+
+	#worksDevice {
+		min-height: 409px;
+		background-image: url(iphone.png);
+		background-size: 200px 408.5px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#works .projectImage {
+		display: block;
+	}
+
+	#works .projectLogo {
+		display: none;
+	}
+
+	/*#worksContent .linkContainer {
+		margin-left: 0.5em;
+	}*/
+
+	/*#worksContent h4 {
+		padding-left: 1em;
+	}
+
+	#worksContent p {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.linkContainer {
+		padding-left: 0.5em;
+	}*/
+}

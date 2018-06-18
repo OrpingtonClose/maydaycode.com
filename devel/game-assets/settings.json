@@ -1,0 +1,49 @@
+{
+	"worldWidth": 960,
+	"worldHeight": 540,
+	"gravity": 500,
+	"velocityLeft": -200,
+	"velocityRight": 200,
+	"velocityJump": -200,
+	"initialPower": 100,
+	"powerDecrease": 1,
+	"powerIncrease": 1,
+	"initialSpeed": 100,
+	"delayDecrease": 25,
+	"initialDelay": 2500,
+	"scoreIncrease": 1,
+	"stonnedScoreIncrease": 5,
+	"stonnedInterval": 7000,
+	"minDelay": 250,
+	"maxCountLiving": 16,
+	"textStyle": {
+		"font": "32px Ubuntu",
+		"fill": "#fff",
+    "boundsAlignH": "center",
+    "boundsAlignV": "middle"
+	},
+  "controlTextStyle": {
+    "font": "26px Ubuntu",
+    "fill": "#fff",
+    "boundsAlignH": "center",
+    "boundsAlignV": "middle"
+  },
+  "copyrightStyle": {
+    "font": "18px Ubuntu",
+    "fill": "#7a0355",
+    "boundsAlignH": "center",
+    "boundsAlignV": "middle"
+  },
+  "powerStyle": {
+    "font": "26px Ubuntu",
+    "fill": "#c03a2b",
+    "boundsAlignH": "center",
+    "boundsAlignV": "middle"
+  },
+  "scoreStyle": {
+    "font": "26px Ubuntu",
+    "fill": "#00efd2",
+    "boundsAlignH": "center",
+    "boundsAlignV": "middle"
+  }
+}
