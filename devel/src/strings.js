@@ -33,7 +33,7 @@ module.exports = {
     nodeDesc: '<a href=\"https://nodejs.org\">Javascript on the server side!</a> One language from client to server. How cool that is!',
     firebaseDesc: '<a href="https://firebase.google.com">Firebase</a> is a <a href="https://en.wikipedia.org/wiki/Real-time_database">real-time</a> and multiplatform, auto-scaling, cheap and cloud-hosted database by Google. Need more?',
     kotlinDesc: '<a href="https://kotlinlang.org">Kotlin</a> is the successor of Java, now <a href="https://developer.android.com/kotlin/index.html">official on Android</a>! Thank you <a href="https://www.jetbrains.com">JetBrains</a>, thank you Google!',
-    vueDesc: '<a href="https://vuejs.org">Vue.js</a> is a modern <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end javascript framework</a>. Perfect solution for your next feautrefilled modern <a href="https://en.wikipedia.org/wiki/Web_application">webapps</a>!',
+    vueDesc: '<a href="https://vuejs.org">Vue.js</a> is a modern <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end javascript framework</a>. Perfect solution for your next feature-filled  modern <a href="https://en.wikipedia.org/wiki/Web_application">webapps</a>!',
     cssHtmlDesc: '<a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> & <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> are the \'languages\' of the web, so we love them... and sometimes hate them too ;)',
     mission: 'Mission',
     missionTitle: 'Pro Software Development',
