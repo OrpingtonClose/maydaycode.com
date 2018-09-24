@@ -10,6 +10,7 @@ test&tries
 firebase*.log
 firebase.json
 package-lock.json
+.firebase
 
 # Editor directories and files
 .idea
